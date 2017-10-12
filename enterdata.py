@@ -16,11 +16,11 @@ def enterjunk(length):
         pg.click(40, 150)
         pg.typewrite(randomword(random.randrange(0,10,1)))
         pg.click(100,150)
-        time.sleep(4)
+        time.sleep(3)
 
     return ""
 
 
-wb.open("http://www.cs.usfca.edu/~galles/visualization/BPlusTree.html",new=2)
-time.sleep(3)
-enterjunk(100)
+if wb.open("http://www.cs.usfca.edu/~galles/visualization/BPlusTree.html",new=2) :
+    time.sleep(3)
+    enterjunk(100)
